@@ -10,14 +10,17 @@
     "start": "node --env-file=.env server.js",
     "dev": "nodemon --env-file=.env server.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "swagger": "node src/swagger.js"
   },
   "dependencies": {
     "express": "^5.2.1",
-    "mongodb": "^7.6.0"
+    "mongodb": "^7.6.0",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^10.10.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "swagger-jsdoc": "^6.3.0"
   }
 }
